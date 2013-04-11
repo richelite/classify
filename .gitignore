@@ -1,2 +1,7 @@
 .DS_Store
 result.txt
+sample.py
+train_sample.txt
+validate_sample.txt
+test.csv
+test.txt

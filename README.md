@@ -27,7 +27,7 @@ Every document in raw.txt is a microblog extracted from a leading microblogging 
 
 	Precision=0.989280275707
 
-	$ python SVM.py -k rbf -t ./data/train_sample.txt -v ./data/validate_sample.txt
+	$ python SVM.py -k rbf -t ./data/train.txt -v ./data/validate.txt
 
 	Precision=0.937100613958
 
