@@ -1,7 +1,7 @@
-raw = open('raw.txt','r')
-clean = open('clean.txt','w')
-train = open('train.txt','w')
-validate = open('validate.txt','w')
+raw = open('./data/raw.txt','r')
+clean = open('./data/clean.txt','w')
+train = open('./data/train.txt','w')
+validate = open('./data/validate.txt','w')
 lineCount = 0
 
 for line in raw:

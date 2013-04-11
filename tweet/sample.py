@@ -1,7 +1,7 @@
-raw = open('raw.txt','r')
-clean = open('clean.txt','w')
-train = open('train_sample.txt','w')
-validate = open('validate_sample.txt','w')
+raw = open('./data/raw.txt','r')
+clean = open('./data/clean.txt','w')
+train = open('./data/train_sample.txt','w')
+validate = open('./data/validate_sample.txt','w')
 lineCount = 0
 
 for line in raw:
@@ -10,9 +10,9 @@ for line in raw:
 		continue
 	cat, message = line.split('\t')
 	clean.write(cat+'\t'+message)
-	if lineCount % 20 in [4,8,12]:
+	if lineCount % 25 in [5,10,15]:
 		train.write(cat+'\t'+message)
-	if lineCount % 20 == 16:
+	if lineCount % 25 == 20:
 		validate.write(cat+'\t'+message)
 
 raw.close()
