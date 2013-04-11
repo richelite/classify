@@ -16,7 +16,7 @@ Every document in raw.txt is a blog entry extracted from social media (livejourn
 
 	Precision=0.632140615191
 
-**Tweet - Political Tweet Classification **
+**Tweet - Political Tweet Classification**
 Every document in raw.txt is a microblog extracted from a leading microblogging site. The goal is to classify whether the short document contains political content or not. The raw.txt file contains 200570 tweets, already labeled with 1 (political) or 0 (non-political). 75% of raw data is extracted as training data, the rest 25% is for validation.
 
 	$ python NaiveBayes.py -t ./data/train.txt -v ./data/validate.txt
