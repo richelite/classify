@@ -2,6 +2,7 @@ textminr
 ========
 
 BLOG:
+
 	$ python NaiveBayes.py -t ./data/train.txt -v ./data/validate.txt
 
 	Precision=0.735091023227
@@ -15,6 +16,7 @@ BLOG:
 	Precision=0.632140615191
 
 TWEET:
+
 	$ python NaiveBayes.py -t ./data/train.txt -v ./data/validate.txt
 
 	Precision=0.915724933878
