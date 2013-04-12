@@ -1,5 +1,7 @@
-textminr -- my text classification playground
+textminr
 =====================================
+my text classification playground
+
 ##Classify your thought
 [Demo](http://classify.aws.af.cm/)
 Simply put linear SVM classifier online. It could classify your input to good/bad mood and political or not. If your input is neutral, the result will not be accurate enough. Have fun!
@@ -45,3 +47,14 @@ Every document in raw.txt is a microblog extracted from twitter. The goal is to 
 	$ python LogReg.py -t ./data/train.txt -v ./data/validate.txt
 
 	Precision=0.988739280276
+
+##License
+(The MIT License)
+
+Copyright (c) 2013 Shuo Yang <richeliteys@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
