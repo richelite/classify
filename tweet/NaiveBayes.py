@@ -8,7 +8,7 @@ class NaiveBayes:
 	def __init__(self):
 		self.clf = MultinomialNB()
 		self.pattern ='(?u)\\b[A-Za-z]{3,}'
-		self.tfidf = TfidfVectorizer(sublinear_tf=True, lowercase=True, max_df=0.5, stop_words='english', token_pattern=self.pattern, ngram_range=(1, 3))
+		self.tfidf = TfidfVectorizer(norm='l1', sublinear_tf=False, use_idf=True, smooth_idf=True, stop_words='english', token_pattern=self.pattern, ngram_range=(1,3))
 
 	def train(self,fileName):
 		print "Naive Bayes classifier is being trained"
