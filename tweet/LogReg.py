@@ -8,7 +8,7 @@ class LR:
 	def __init__(self):
 		self.clf = LogisticRegression(penalty='l1', dual=False, tol=0.0001, C=16, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None)
 		self.pattern ='(?u)\\b[A-Za-z]{3,}'
-		self.tfidf = TfidfVectorizer(sublinear_tf=True, use_idf=True, smooth_idf=True, stop_words='english', token_pattern=self.pattern, ngram_range=(1, 3))
+		self.tfidf = TfidfVectorizer(norm='l1', sublinear_tf=True, use_idf=True, smooth_idf=True, stop_words='english', token_pattern=self.pattern, ngram_range=(1, 3))
 	
 	def train(self,fileName):
 		print "Logistic Regression Classifier is being trained"

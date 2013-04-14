@@ -12,7 +12,7 @@ class SVM:
 		if kernel=='rbf':
 			self.clf = NuSVC(nu=0.7, kernel='rbf', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, verbose=False, max_iter=-1)
 		self.pattern ='(?u)\\b[A-Za-z]{3,}'
-		self.tfidf = TfidfVectorizer(sublinear_tf=False, use_idf=True, smooth_idf=True, stop_words='english', token_pattern=self.pattern, ngram_range=(1, 2))
+		self.tfidf = TfidfVectorizer(norm='l1', sublinear_tf=False, use_idf=True, smooth_idf=True, stop_words='english', token_pattern=self.pattern, ngram_range=(1, 3))
 	def train(self,fileName):
 		print "SVM Classifier is being trained"
 		table = pandas.read_table(fileName, sep="\t", names=["cat", "message"])
