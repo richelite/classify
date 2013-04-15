@@ -65,16 +65,16 @@ app.post('/', function(req,res){
             switch (results.toString())
             {
                 case '1,1':
-                    result = 'You were talking about politics. And you like it!'
+                    result = 'You were thinking about politics. And you like it!'
                     break;
                 case '1,0':
-                    result = 'You were not talk about politics! And you like it!'
+                    result = 'You were not thinking about politics! And you like it!'
                     break;
                 case '0,1':
-                    result = "You were talking about politics. And you don' like it!"
+                    result = "You were thinking about politics. And you don't like it!"
                     break;
                 case '0,0':
-                    result = "You were not talking about politics. And you don' like it!"
+                    result = "You were not thinking about politics. And you don't like it!"
                     break;
             }
             res.render('index', { value: text_message, message: result });
