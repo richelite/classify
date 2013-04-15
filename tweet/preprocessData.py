@@ -10,7 +10,7 @@ for line in raw:
 		continue
 	cat, message = line.split('\t')
 	clean.write(cat+'\t'+message)
-	if lineCount % 4 == 0:
+	if lineCount % 4 == 3:
 		validate.write(cat+'\t'+message)
 	else:
 		train.write(cat+'\t'+message)

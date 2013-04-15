@@ -3,7 +3,7 @@ var express = require('express')
   , request = require('request')
   , async = require('async')
   , path = require('path')
-  , Settings = require('./settings.js');
+  , Settings = require('./settings');
 
 var app = express();
 var settings = new Settings();

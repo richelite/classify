@@ -1,4 +1,4 @@
-function settings() {
+function Settings() {
 	this.url = 'http://api.yhathq.com/predict?';
 	this.mood =  { 
             username: 'username',
@@ -14,4 +14,4 @@ function settings() {
 	}
 };
 
-module.exports = settings;
+module.exports = Settings;
