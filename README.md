@@ -1,7 +1,3 @@
-textminr
-=====================================
-my text classification playground
-
 ##Classify your thought
 [Demo](http://classify.aws.af.cm/)
 Simply put linear SVM classifier online. It could classify your input to good/bad mood and political or not. If your input is neutral, the result will not be accurate enough. Have fun!
