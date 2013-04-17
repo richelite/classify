@@ -6,10 +6,15 @@ if (Meteor.is_client) {
   Template.messageP.message = function(){
     return Positive.find({}, { sort: { time: -1 }});
   }
+  Template.Pcount.count = function(){
+    return Positive.find({}).count();
+  }
   Template.messageN.message = function(){
     return Negative.find({}, { sort: { time: -1 }});
   }
-
+  Template.Ncount.count = function(){
+    return Negative.find({}).count();
+  }
   Template.messageEntry.events = {
     "keydown #messageInput": function(event){
       if(event.which == 13){
@@ -17,7 +22,8 @@ if (Meteor.is_client) {
         var message = $('#messageInput');
         var messageValue = $('#messageInput').val();
         var now = new Date();
-        var now = now.toLocaleString();
+        var utc = now.toUTCString();
+        var now = utc.split(', ')[1];
         if(messageValue == ''){
           window.alert("Error: Empty value");
           message.val('');

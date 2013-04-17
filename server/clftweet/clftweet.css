@@ -13,6 +13,11 @@ p {
 }
 .inputArea {
 	text-align: center;
+	vertical-align: middle;
+}
+
+#classify{
+	margin-top: -10px;
 }
 .messageArea {
 	width: auto;
@@ -28,3 +33,14 @@ p {
 	width: 50%;
 	float: right;
 }
+.tweet{
+	margin: 20px 0;
+}
+.tweet .img{
+	width: 12%;
+	float: left;
+}
+.tweet .content{
+	width: 90%;
+}
+

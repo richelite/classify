@@ -1,0 +1,17 @@
+<head>
+  <title>Meteor - twitter public timeline demo</title>
+</head>
+ 
+<body>
+  {{> hello}}
+</body>
+ 
+<template name="hello">
+  <h3>Meteor: calling 3rd party service</h3>
+  {{greeting}} <input type="text" id="userName" value="{{userName}}"></input> 
+<ul>
+  {{#each recentTweets}}
+    <li>{{class}} => {{text}} at {{tweettime}}</li>
+  {{/each}}
+</ul>
+</template>

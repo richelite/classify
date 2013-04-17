@@ -1,0 +1,82 @@
+<head>
+  <title>Classify Tweet</title>
+</head>
+
+<body>
+  <div class="navbar">
+  	<div class="container">
+  		<a href='https://github.com/richelite/classify'><img class="github" src='https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png')/></a>
+  	</div>
+  </div>
+  <div class="container">
+	  <div class="inputArea">
+	    {{> userNameEntry}}
+	  </div>
+	  <div class="messageArea">
+	  	<div class="messageP">
+	  	  <div class="title">	
+	  	  	<h4>Positive</h4>({{>Pcount}})
+	  	  </div>
+		  {{> messageP}}
+		</div>
+		<div class="messageN">
+		  <div class="title">	
+	  	  	<h4>Negative</h4>({{>Ncount}})
+	  	  </div>
+
+		  {{> messageN}}
+		</div>
+	  </div>
+  </div>
+</body>
+
+<template name="userNameEntry">
+  <input type="text" class="span4" id="userNameInput" placeholder="Enter a Twitter username to classify mood!" />
+  <input type="button" id="classify" class="btn btn-primary" value="Classify" />
+</template>
+
+<template name="Pcount">
+  {{count}}
+</template>
+
+<template name="Ncount">
+  {{count}}
+</template>
+
+<template name="messageP"> 
+  {{#each message}}
+  	<div class="tweet">
+  		<div class="img">
+  			<img src={{img}} />
+  		</div>
+  		<div class="content">
+  			<div class="up">
+	  			<span class="user">@{{user}}</span>
+	  			<span class="time"><small><i>{{tweetTime}}</i></small></span>
+	  		</div>
+	  		<div class="down">
+	  			<strong>{{text}}</strong>	
+	  		</div>
+  		</div>
+	</div>
+  {{/each}}  
+</template>
+
+<template name="messageN"> 
+  {{#each message}}
+  	<div class="tweet">
+  		<div class="img">
+  			<img src={{img}} />
+  		</div>
+  		<div class="content">
+  			<div class="up">
+	  			<span class="user">@{{user}}</span>
+	  			<span class="time"><small><i>{{tweetTime}}</i></small></span>
+	  		</div>
+	  		<div class="down">
+	  			<strong>{{text}}</strong>	
+	  		</div>
+  		</div>
+	</div>
+  {{/each}}
+</template>
