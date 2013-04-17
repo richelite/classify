@@ -1,7 +1,12 @@
-##Classify - my text mining playground
+##Classify
+
+my text mining playground
+
+## ./server Online Classification
 [Classify Mind](http://clfmind.meteor.com/)
 
 [Classify Tweet](http://clftweet.meteor.com/)
+
 Simply put linear SVM classifier online. It could classify your input to good/bad mood and political or not. If your input is neutral, the result will not be accurate enough. Have fun!
 
 If you want to run the server on your local, please get your API from [Yhat!](http://yhathq.com/), put your credential to settings-example.js, and change it to setting.js. You have to install node.js to run it. If you are not familiar with it, please see [here](http://nodejs.org/).
