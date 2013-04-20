@@ -5,7 +5,7 @@
 <body>
   <div class="navbar">
   	<div class="container">
-  		<a href='https://github.com/richelite/classify'><img class="github" src='https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png')/></a>
+  		<a href='https://github.com/richelite/classify' target="_blank"><img class="github" src='https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png')/></a>
   	</div>
   </div>
   <div class="container">
@@ -46,18 +46,16 @@
 <template name="messageP"> 
   {{#each message}}
   	<div class="tweet">
-  		<div class="img">
-  			<img src={{img}} />
-  		</div>
-  		<div class="content">
-  			<div class="up">
-	  			<span class="user">@{{user}}</span>
-	  			<span class="time"><small><i>{{tweetTime}}</i></small></span>
-	  		</div>
-	  		<div class="down">
-	  			<strong>{{text}}</strong>	
-	  		</div>
-  		</div>
+  		<table>
+			<tr>
+			  <td class="img" rowspan="2"><img src={{img}} /></td>
+			  <td class="username"><a href="https://twitter.com/{{user}}" target="_blank">@{{user}}</a></td>
+			  <td class="time"><i>{{tweetTime}}</i></td>  
+			</tr>
+			<tr>
+			  <td class="text" colspan="2"><strong>{{text}}<strong></td>
+			</tr>
+		</table>
 	</div>
   {{/each}}  
 </template>
@@ -65,18 +63,16 @@
 <template name="messageN"> 
   {{#each message}}
   	<div class="tweet">
-  		<div class="img">
-  			<img src={{img}} />
-  		</div>
-  		<div class="content">
-  			<div class="up">
-	  			<span class="user">@{{user}}</span>
-	  			<span class="time"><small><i>{{tweetTime}}</i></small></span>
-	  		</div>
-	  		<div class="down">
-	  			<strong>{{text}}</strong>	
-	  		</div>
-  		</div>
+  		<table>
+			<tr>
+			  <td class="img" rowspan="2"><img src={{img}} /></td>
+			  <td class="username"><a href="https://twitter.com/{{user}}" target="_blank">@{{user}}</a></td>
+			  <td class="time"><i>{{tweetTime}}</i></td>  
+			</tr>
+			<tr>
+			  <td class="text" colspan="2"><strong>{{text}}<strong></td>
+			</tr>
+		</table>
 	</div>
   {{/each}}
 </template>
