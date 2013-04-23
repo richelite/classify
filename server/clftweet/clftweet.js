@@ -29,6 +29,7 @@ if (Meteor.is_client) {
         Meteor.call('fetchFromService', userName, function(err, respJson) {
           if(err) {
             window.alert("Error: " + err.reason);
+            $('#classify').removeAttr('disabled').val('Classify');
             console.log("error occured on receiving data on server. ", err );
           } else {
             respJson.forEach(function(item){
