@@ -3,9 +3,9 @@
 My text mining playground
 
 ## ./server Online Classification
-[Classify Mind](http://clfmind.meteor.com/) can classify your input to political or non-political category.
+[http://clfmind.meteor.com/](http://clfmind.meteor.com/) can classify your input to political or non-political category.
 
-[Classify Tweet](http://clftweet.meteor.com/) can classify your tweets to positive mood or negative mood category.
+[http://clftweet.meteor.com/](http://clftweet.meteor.com/) can classify your tweets to positive mood or negative mood category.
 
 
 ##./blog - Mood classification
