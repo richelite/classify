@@ -1,35 +1,3 @@
-<head>
-  <title>Classify Tweet</title>
-</head>
-
-<body>
-  <div class="navbar">
-  	<div class="container">
-  		<a href='https://github.com/richelite/classify' target="_blank"><img class="github" src='https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png')/></a>
-  	</div>
-  </div>
-  <div class="container">
-	  <div class="inputArea">
-	    {{> userNameEntry}}
-	  </div>
-	  <div class="messageArea">
-	  	<div class="messageP">
-	  	  <div class="title">	
-	  	  	<h4>Positive</h4>({{>Pcount}})
-	  	  </div>
-		  {{> messageP}}
-		</div>
-		<div class="messageN">
-		  <div class="title">	
-	  	  	<h4>Negative</h4>({{>Ncount}})
-	  	  </div>
-
-		  {{> messageN}}
-		</div>
-	  </div>
-  </div>
-</body>
-
 <template name="userNameEntry">
   <input type="text" class="span4" id="userNameInput" placeholder="Enter a Twitter username to classify mood!" />
   <input type="button" id="classify" class="btn btn-primary" value="Classify" />
